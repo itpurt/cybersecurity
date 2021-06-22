@@ -30,8 +30,8 @@ Load balancing ensures that the application will be highly reliable, in addition
 - As the name suggests, load balancers are used to protect internal resources from overloading and will evenly distribute traffic from the network to each of the web-vms available in the backend pool. The load balancer monitors the health of each resource within the backend pool and will only distribute traffic if a resource meets the health requirements. This reinforces the load balancer's main function to keep internal resources available.
 - Jump-box is used to limit external SSH traffic to only one resource within the architecture and allow trusted access to the internal resources (web servers). 
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system logs.
-- _TODO: What does Filebeat watch for?_
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the and  application and system logs.
+- [Filebeat|https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-overview.html] monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
 - _TODO: What does Metricbeat record?_
 
 The configuration details of each machine may be found below.
