@@ -27,9 +27,8 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly reliable, in addition to restricting the web-vms to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
 - As the name suggests, load balancers are used to protect internal resources from overloading and will evenly distribute traffic from the network to each of the web-vms available in the backend pool. The load balancer monitors the health of each resource within the backend pool and will only distribute traffic if a resource meets the health requirements. This reinforces the load balancer's main function to keep internal resources available.
-- Jump-box is used to limit external ssh
+- Jump-box is used to limit external SSH traffic to only one resource within the architecture and allow trusted access to the internal resources (web servers). 
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system logs.
 - _TODO: What does Filebeat watch for?_
