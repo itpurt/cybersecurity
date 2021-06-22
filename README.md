@@ -31,7 +31,7 @@ Load balancing ensures that the application will be highly reliable, in addition
 - Jump-box is used to limit external SSH traffic to only one resource within the architecture and allow trusted access to the internal resources (web servers). 
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the and  application and system logs.
-- [Filebeat|https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-overview.html] monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
+- [Filebeat!](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-overview.html) monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
 - _TODO: What does Metricbeat record?_
 
 The configuration details of each machine may be found below.
