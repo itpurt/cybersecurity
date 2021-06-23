@@ -69,14 +69,14 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 - Install docker
-- Install package PIP (installer for python)I
+- Install package PIP (installer for python)
 - Install python docker module
 - Download and launch a docker web container (cyberxsecurity/dvwa)
 - Enable docker service
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![Screenshot of docker ps output](Diagrams/docker-ps-elk.jpeg)
+![Screenshot of docker ps output](Diagrams/elk-stack/docker-ps-elk.JPG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
