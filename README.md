@@ -89,7 +89,6 @@ We have installed the following Beats on these machines:
 - Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
 - Filebeat allows you to specify which system log files you are interested in monitoring and then will help aggregate them in a meaningful way to help your security analyst identify anomalies. For example, if you have configured Filebeat to monitor system logs, /var/log/messages and /var/log/apache2, then Filebeat will concatenate the logs together.
 - On the other hand, Metricbeat will silently gather configured metrics such as:
 ```
