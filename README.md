@@ -35,7 +35,6 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - [Metricbeat](https://www.elastic.co/beats/metricbeat) monitors system metrics as configured.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
@@ -63,14 +62,16 @@ A summary of the access policies in place can be found in the table below.
 |          |                     |                      |
 |          |                     |                      |
 
-### Elk Configuration
+## Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it provides a streamlined way of deploying containers to various hosts in a single script; with the same environment to each host. It's also reuseable; if more deployments are necessary in the future, this script can be leaveraged.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- Install docker
+- Install package PIP (installer for python)I
+- Install python docker module
+- Download and launch a docker web container (cyberxsecurity/dvwa)
+- Enable docker service
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
