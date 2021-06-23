@@ -52,13 +52,13 @@ Only the load balancer (lb-1) machine can accept connections from the Internet. 
 - 	47.186.115.237
 
 Machines within the network can only be accessed by the jump-box.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+- ELK-VM is accessible from the same jump box, 10.0.0.4, used for the web-vms.
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible |  Public IP Allowed |Allowed IP Addresses                 |
 |----------|---------------------|--------------------|-------------------------------------|
-| Jump Box | Yes                 | 47.186.115.237     |10.0.0.9,10.0.0.8,10.0.0.10,10.1.0.0 |
+| Jump Box | Yes                 | 47.186.115.237     |10.0.0.9,10.0.0.8,10.0.0.10,10.1.0.4 |
 | Web-1    | No                  |                    |10.0.0.4                             |
 | Web-2    | No                  |                    |10.0.0.4                             |
 | Web-3    | No                  |                    |10.0.0.4                             |
@@ -76,7 +76,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![Screenshot of docker ps output](Diagrams/docker-ps-elk.jpeg)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
