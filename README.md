@@ -56,12 +56,13 @@ Machines within the network can only be accessed by the jump-box.
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
-
+| Name     | Publicly Accessible |  Public IP Allowed |Allowed IP Addresses                 |
+|----------|---------------------|--------------------|-------------------------------------|
+| Jump Box | Yes                 | 47.186.115.237     |10.0.0.9,10.0.0.8,10.0.0.10,10.1.0.0 |
+| Web-1    | No                  |                    |10.0.0.4                             |
+| Web-2    | No                  |                    |10.0.0.4                             |
+| Web-3    | No                  |                    |10.0.0.4                             |
+| ELK-VM   | Yes                 | 47.186.115.237     |10.0.0.4                             |
 ## Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it provides a streamlined way of deploying containers to various hosts in a single script; with the same environment to each host. It's also reuseable; if more deployments are necessary in the future, this script can be leaveraged.
@@ -98,7 +99,7 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include ip addresses of all the web-vms and the elk-stack vm
 - Update the ansible.cfg file 
   - remote_user should be set to sysadmin
-- Run the playbook, and navigate to [Kibana Webpage](http://23.100.122.149:5601/app/kibana) to check that the installation worked as expected.
+- Run the playbook, and navigate to Kibana Webpage (http://23.100.122.149:5601/app/kibana) to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
