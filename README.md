@@ -113,5 +113,3 @@ SSH into the control node and follow the steps below:
 - Update the ansible.cfg file 
   - remote_user should be set to sysadmin
 - Run the playbook, and navigate to Kibana Webpage (http://23.100.122.149:5601/app/kibana) to check that the installation worked as expected.
-
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
